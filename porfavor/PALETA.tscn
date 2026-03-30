@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://f5vlx0kspoq1"]
+
+[ext_resource type="Texture2D" uid="uid://cd5pil3s34771" path="res://assets/paleta_arkanoid_50px.png" id="1_jylpu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0d7qp"]
+size = Vector2(63.5, 10)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1910741155]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1912364273]
+texture_filter = 1
+texture = ExtResource("1_jylpu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=187929215]
+position = Vector2(0.25, -3)
+shape = SubResource("RectangleShape2D_0d7qp")
